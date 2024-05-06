@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="920.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+    <children>
+        <MenuBar fx:id="menu" prefHeight="25.0" prefWidth="720.0">
+            <menus>
+                <Menu fx:id="app" mnemonicParsing="false" text="Application">
+                    <items>
+                        <MenuItem fx:id="create" mnemonicParsing="false" onAction="#create" text="Create" />
+                        <MenuItem fx:id="load" mnemonicParsing="false" onAction="#load" text="Load" />
+                        <MenuItem fx:id="start" mnemonicParsing="false" onAction="#start" text="Start" />
+                        <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exits" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu fx:id="edit" mnemonicParsing="false" text="Details">
+                    <items>
+                        <MenuItem fx:id="rounds" mnemonicParsing="false" onAction="#rounds" text="Rounds" />
+                        <MenuItem fx:id="solution" mnemonicParsing="false" onAction="#solution" text="Solution" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label fx:id="bombs" layoutX="79.0" layoutY="110.0" prefHeight="56.0" prefWidth="80.0" text="00">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label fx:id="marks" layoutX="280.0" layoutY="110.0" prefHeight="56.0" prefWidth="80.0" text="00">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label fx:id="timer" layoutX="512.0" layoutY="110.0" prefHeight="56.0" prefWidth="80.0" text="0">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

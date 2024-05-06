@@ -1,0 +1,5 @@
+40 2 3 Computer
+40 18 3 Computer
+40 48 157 Computer
+40 14 64 Computer
+9 2 4 Computer
